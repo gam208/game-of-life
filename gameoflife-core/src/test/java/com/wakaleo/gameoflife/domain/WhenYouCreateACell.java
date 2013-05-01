@@ -11,7 +11,7 @@ public class WhenYouCreateACell {
 
     @Test
     public void aLiveCellShouldBeRepresentedByAnAsterisk() {
-        Cell cell = Cell.fromSymbol("*");
+        Cell cell = Cell.fromSymbol("+");
         assertThat(cell, is(LIVE_CELL));
     }
 
@@ -23,7 +23,7 @@ public class WhenYouCreateACell {
 
     @Test
     public void aLiveCellShouldBePrintedAsAnAsterisk() {
-        assertThat(Cell.LIVE_CELL.toString(), is("*"));
+        assertThat(Cell.LIVE_CELL.toString(), is("+"));
     }
 
 
